@@ -1,0 +1,37 @@
+.container_card_stacks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 483.077px;
+    height: 84.282px;
+    flex-shrink: 0;
+
+    border-radius: 15px;
+    border: 1px solid rgba(217, 217, 217, 0.64);
+    background: #141414;
+}
+.card_stack_2{
+    width: 466px;
+    height: 70px;
+    flex-shrink: 0;
+
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(77, 77, 77, 0.90) 0%, #090909 100%);
+}
+.card_stack_3{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.h1_card_stacks{
+    width: 346px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
