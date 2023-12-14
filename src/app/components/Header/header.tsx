@@ -1,13 +1,16 @@
+import Image from "next/image"
+import logo from "../../../assets/logo.png"
+
 export function MyHeader () {
     return(
         <>
-            <header className="w-screen bg-black flex justify-center items-center">
-                <img src="" alt="" />
-                <ul className="flex h-[5.9rem] text-grey justify-between w-[20%] items-center">
-                    <li> <a href="">Templates</a></li>
-                    <li> <a href="">Docs</a></li>
-                    <li> <a href="">Blog</a></li>
-                    <li> <a href="">Sobre mim</a></li>
+            <header className="h-[5.9rem] bg-black flex justify-between items-center ps-[10.5rem] pe-[32.9rem] border-b-[0.1rem] border-y-grey">
+                <Image src={logo} alt="logo" className="w-[15rem]"/>
+                <ul className="flex h-[100%] justify-between w-[56.5rem] items-center text-green_clean">
+                    <li><a href="" className=" hover:text-grey">Templates</a></li>
+                    <li><a href="" className=" hover:text-grey">Docs</a></li>
+                    <li><a href="" className=" hover:text-grey">Blog</a></li>
+                    <li><a href="" className=" hover:text-grey">Sobre mim</a></li>
                 </ul>
             </header>
         </>
