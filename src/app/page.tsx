@@ -3,6 +3,7 @@ import vector01 from "../../public/vector01.svg"
 import icon04 from "../../public/icon04.svg"
 import { CardsPrimery } from "./components/Cards/primery/cards.primery";
 import { CardStackInit } from "./components/Cards/staccks/cards.stacks.init";
+import { LinksWorks } from "./components/LinksWorks/links.works";
 
 export default function Home() {
   return (
@@ -39,7 +40,10 @@ export default function Home() {
         <Image src={icon04} alt="Icons das features" className="img_home_icon04"/>
 
         <div className="cards_and_links">
-            <CardStackInit />
+            <div className="div_cards_stacks">
+              <CardStackInit />
+            </div>
+            <LinksWorks />
         </div>
       </div>
 

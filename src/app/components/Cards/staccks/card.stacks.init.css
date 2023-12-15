@@ -35,3 +35,11 @@
     font-weight: 400;
     line-height: normal;
 }
+.cards_init{
+    display: flex;
+    flex-direction: column;
+
+    height: auto;
+    margin-bottom: 1.2rem;
+
+}

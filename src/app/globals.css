@@ -3,6 +3,7 @@
 @tailwind utilities;
 @import url("./components/Cards/primery/style.css");
 @import url("./components/Cards/staccks/card.stacks.init.css");
+@import url("./components/LinksWorks/links.works.css");
 
 *{
   margin: 0;
@@ -127,4 +128,8 @@ body {
 }
 .img_home_icon04{
   margin-bottom: 7.3rem;
+}
+.cards_and_links{
+  display: flex;
+  gap: 29.4rem;
 }
