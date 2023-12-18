@@ -1,17 +1,36 @@
+"use client"
 import Image from "next/image";
 import vector01 from "../../public/vector01.svg"
 import icon04 from "../../public/icon04.svg"
 import { CardsPrimery } from "./components/Cards/primery/cards.primery";
 import { CardStackInit } from "./components/Cards/staccks/cards.stacks.init";
 import { LinksWorks } from "./components/LinksWorks/links.works";
+import { Footer } from "./components/footer/footer";
+import Typing from "./components/typing"
+// import {useLayoutEffect} from "react"
+// import {gsap} from "gsap"
+// import {ScrollTrigger} from "gsap/ScrollTrigger"
+
 
 export default function Home() {
+
+  // useLayoutEffect(()=>{
+  //   gsap.to(".loimg_home_vector01go", {
+
+  //   })
+
+  //   return ()=>{
+  //     gsap.killTweensOf(".img_home_vector01")
+  //   }
+  // }, [])
+
   return (
     <div className="home_one">
       <Image src={vector01} alt="logo" className="img_home_vector01"/>
       <div className="primaries_infor_texts">
         <h3 className="h3_text_one">Transforme sua visão em realidade, com um toque de inovação!</h3>
-        <h1 className="h1_text_one">Desenvolvimento Full Stack</h1>
+        {/* <h1 className="h1_text_one">Desenvolvimento Full Stack</h1> */}
+        <Typing formationDiscripition = "Desenvolvimento Full Stack"/>
         <p className="p_text_one">
           Desenvolvimento Full Stack envolve habilidades abrangentes 
           tanto no frontend quanto no backend, permitindo a criação 
@@ -45,6 +64,10 @@ export default function Home() {
             </div>
             <LinksWorks />
         </div>
+      </div>
+
+      <div className="home_footer">
+        <Footer />
       </div>
 
     </div>

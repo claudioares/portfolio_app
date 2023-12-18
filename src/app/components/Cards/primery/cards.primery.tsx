@@ -1,12 +1,63 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+"use client"
 import Image from "next/image"
 import icon01 from "../../../../../public/icon01.svg"
 import icon02 from "../../../../../public/icon02.svg"
 import icon03 from "../../../../../public/icon03.svg"
+import {useLayoutEffect} from "react"
+import {gsap} from "gsap"
+import {ScrollTrigger} from "gsap/ScrollTrigger"
+
 
 export function CardsPrimery () {
+
+
+    gsap.registerPlugin(ScrollTrigger)
+    useLayoutEffect(()=>{
+        gsap.to(".c_1", {
+            x: 0,
+            opacity: 1,
+            scrollTrigger: {
+                trigger: ".container_cards",
+                start: "top 400px",
+                end: "bottom 650px",
+                scrub: true
+            }
+        })
+
+        gsap.to(".c_2", {
+            y:0,
+            opacity: 1,
+            scrollTrigger: {
+                trigger: ".container_cards",
+                start: "top 400px",
+                end: "bottom 650px",
+                scrub: true
+            }
+        })
+
+        gsap.to(".c_3", {
+            y:0,
+            opacity: 1,
+            scrollTrigger: {
+                trigger: ".container_cards",
+                start: "top 400px",
+                end: "bottom 650px",
+                scrub: true
+            }
+        })
+
+        return ()=>{
+            gsap.killTweensOf(".c_1, .c_2, .c_3")
+        }
+    }, [])
+
+
+   
+
     return(
-        <div className="container_cards">
-            <div className="cards">
+        <div className="container_cards" >
+            <div className="cards c_1">
                 <div className="img_card">
                     <Image src={icon01} alt="imagem do card"/>
                 </div>
@@ -18,7 +69,7 @@ export function CardsPrimery () {
                 </p>
             </div>
 
-            <div className="cards">
+            <div className="cards c_2">
                 <div className="img_card">
                     <Image src={icon02} alt="imagem do card"/>
                 </div>
@@ -30,7 +81,7 @@ export function CardsPrimery () {
                 </p>
             </div>
 
-            <div className="cards">
+            <div className="cards c_3">
                 <div className="img_card">
                     <Image src={icon03} alt="imagem do card"/>
                 </div>

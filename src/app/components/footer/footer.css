@@ -1,0 +1,50 @@
+.container_footer{
+    display: flex;
+    justify-content: space-between;
+    height: 45.6rem;
+    flex-shrink: 0;
+
+    background: #141414;
+    border-top: 1px solid rgba(121, 120, 120, 0.151);
+
+    padding: 7.6rem 19.3rem 4rem 11.3rem;
+}
+.content_one{
+    /* visibility: hidden; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.one_image{
+    width: 25.7rem;
+}
+.content_icons_social_redes{
+    display: flex;
+    gap: 1.7rem;
+}
+.content_icons_social_redes img {
+    cursor: pointer;
+}
+.content_icons_social_redes img:hover {
+    opacity: 0.8;
+}
+.content_two{
+    display: flex;
+    align-items: center;
+    gap: 2.9rem;
+}
+.links,
+.contacts{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+
+    gap: 1rem;
+}
+.links,
+.contacts li{
+    cursor: pointer;
+}
+li:hover{
+    color: rgb(158, 240, 240);
+}
