@@ -51,14 +51,7 @@ body {
   font-weight: 400;
   line-height: normal;
 }
-.h1_text_one{
-  color: rgba(116, 192, 184, 0.97);
-  font-family: Montserrat;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
+
 .p_text_one{
   width: 115.8rem;
   text-align: center;
@@ -76,6 +69,8 @@ body {
   gap: 2.5rem;
   margin-top: 5.4rem;
   margin-bottom: 16.9rem;
+
+  opacity: 0;
 }
 .buttons_home button{
   width: 12rem;
@@ -90,13 +85,23 @@ body {
   border-radius: 10px;
 }
 .one{
+  border: 1px solid #CCC;
   background: #D9D9D9;
   color: #1A1A1A;
+  cursor: pointer;
+}
+.one:hover{
+  border: 1px solid #099f8f;
 }
 .two{
   border: 1px solid #CCC;
   color: #D9D9D9;
   background: #4D4D4D;
+
+  cursor: pointer;
+}
+.two:hover{
+  border: 1px solid #099f8f;
 }
 .home_two{
   display: flex;

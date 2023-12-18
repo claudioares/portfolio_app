@@ -3,6 +3,7 @@
   align-items: center;
   width: 48.5rem;
   gap: 2px;
+  
 }
 .typing_function h1:last-child {
   display: flex;

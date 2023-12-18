@@ -1,8 +1,12 @@
 import './styles.css';
 
+type TypingFunction = {
+  formationDiscripition: string
+}
+
 
 // eslint-disable-next-line react/prop-types
-export default function Typing ({formationDiscripition}) {
+export default function Typing ({formationDiscripition}:TypingFunction) {
     return(
         <>
             <div className='typing_function'>
