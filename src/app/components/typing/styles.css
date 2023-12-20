@@ -1,7 +1,7 @@
 .typing_function {
   display: flex;
   align-items: center;
-  width: 48.5rem;
+  width: 48rem;
   gap: 2px;
   
 }
@@ -21,14 +21,14 @@
 .typing_text_config{
   color: rgba(116, 192, 184, 0.97);
   font-family: Montserrat;
-  font-size: 40px;
+  font-size: 33px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
 .description {
-  width: 47.8rem;
+  width: 48.8rem;
   white-space: nowrap;
   overflow: hidden;
 

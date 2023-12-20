@@ -3,6 +3,7 @@ type LinksProps = {
 }
 
 export function Links ({work}:LinksProps) {
+
     return(
         <>
             <div className="cel_link">

@@ -1,9 +1,12 @@
+.container_links{
+    opacity: 0;
+}
 .h3_link_works{
     color: rgba(204, 204, 204, 0.97);
 
     text-align: center;
     font-family: Montserrat;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -16,8 +19,8 @@
     align-items: center;
     justify-content: flex-end;
 
-    width: 315.134px;
-    height: 53.983px;
+    width: 315px;
+    height: 53px;
     flex-shrink: 0;
     padding: 2.2rem;
     margin-bottom: 2rem;
@@ -29,6 +32,6 @@
     cursor: pointer;
 }
 .cel_link:hover{
-    border: 1px solid #099f8f
-
+    border: 1px solid #099f8f;
+    transform: translateX(10px);
 }
