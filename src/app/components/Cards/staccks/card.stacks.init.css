@@ -10,6 +10,47 @@
     border-radius: 15px;
     border: 1px solid rgba(217, 217, 217, 0.64);
     background: #141414;
+
+    cursor: pointer; 
+}
+.container_card_stacks:hover{
+    border: 1px solid rgba(130, 248, 203, 0.64);
+    .h1_card_stacks{
+        color: aqua;
+    }
+    .card_stack_3 img{
+        animation: logoAnimate 3s infinite ease-out;;
+    }
+}
+@keyframes logoAnimate {
+      
+    from {
+        transform: rotate3d(0, 1, 0, 0deg); 
+    } 100% {
+        transform: rotate3d(0, 1, 0, 100deg); 
+    } 125% {
+        transform: rotate3d(0, 1, 0, 125deg); 
+    } 150% {
+        transform: rotate3d(0, 1, 0, 150deg); 
+    } 175% {
+        transform: rotate3d(0, 1, 0, 175deg); 
+    } 200% {
+        transform: rotate3d(0, 1, 0, 200deg); 
+    } 225% {
+        transform: rotate3d(0, 1, 0, 225deg); 
+    } 250% {
+        transform: rotate3d(0, 1, 0, 250deg); 
+    } 275% {
+        transform: rotate3d(0, 1, 0, 275deg); 
+    } 300% {
+        transform: rotate3d(0, 1, 0, 300deg); 
+    } 325%{
+        transform: rotate3d(0, 1, 0, 325deg); 
+    } 350% {
+        transform: rotate3d(0, 1, 0, 350deg); 
+    } to {
+        transform: rotate3d(0, 1, 0, 375deg); 
+    }
 }
 .card_stack_2{
     width: 466px;
@@ -26,11 +67,12 @@
     justify-content: center;
     gap: 2rem;
 }
+
 .h1_card_stacks{
     width: 346px;
     color: #FFF;
     font-family: Montserrat;
-    font-size: 15px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;

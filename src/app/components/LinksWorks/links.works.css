@@ -32,6 +32,6 @@
     cursor: pointer;
 }
 .cel_link:hover{
-    border: 1px solid #099f8f;
+    border: 1px solid #037461;
     transform: translateX(10px);
 }
