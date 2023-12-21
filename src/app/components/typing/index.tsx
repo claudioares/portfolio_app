@@ -11,7 +11,7 @@ export default function Typing ({formationDiscripition}:TypingFunction) {
         <>
             <div className='typing_function'>
                 <h1 className='description typing_text_config'>{formationDiscripition}</h1>
-                <h1 className='cursor typing_text_config'>|</h1>
+                <h1 className='cursor typing_text_config'>&#128172;</h1>
             </div>
         </>
     )

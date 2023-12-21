@@ -1,7 +1,7 @@
 .typing_function {
   display: flex;
   align-items: center;
-  width: 48rem;
+  width: 51rem;
   gap: 2px;
   
 }
@@ -32,7 +32,7 @@
   white-space: nowrap;
   overflow: hidden;
 
-  animation: typingText 12s steps(38) 1s normal infinite;
+  animation: typingText 7s steps(38) 1s normal infinite;
 }
 @keyframes typingText {
   from {

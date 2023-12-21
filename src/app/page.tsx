@@ -1,5 +1,7 @@
 "use client"
 import Image from "next/image";
+import lines_left_home_tree from "../../public/line_left_stacks.svg"
+import lines_rigth_home_tree from "../../public/lines_rigth_works.svg"
 import icon04 from "../../public/icon04.svg"
 import { CardsPrimery } from "./components/Cards/primery/cards.primery";
 import { CardStackInit } from "./components/Cards/staccks/cards.stacks.init";
@@ -78,9 +80,6 @@ export default function Home() {
       </div>
       
       <div className="home_two">
-        <span>
-          Estou aqui para transformar suas ideias em realidade digital.
-        </span>
         <CardsPrimery />
       </div>
 
@@ -90,7 +89,10 @@ export default function Home() {
           ao máximo Ferramentas de alta velocidade e eficiência
         </h2>
         <Image src={icon04} alt="Icons das features" className="img_home_icon04"/>
-
+        <div className="div_lines_home_tree">
+          <Image src={lines_left_home_tree} alt="Linhas da backgroud" className="lines_left_home_tree"/>
+          <Image src={lines_rigth_home_tree} alt="Linhas da backgroud" className="lines_rigth_home_tree"/>
+        </div>
         <div className="cards_and_links">
             <div className="div_cards_stacks">
               <CardStackInit />
