@@ -34,6 +34,9 @@ body {
 }
 .home_one{
   color: #D9D9D9;
+  background-image: url("../../public/bg_lines_init.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .primaries_infor_texts{
   display: flex;
@@ -121,7 +124,8 @@ body {
   gap: 3.2rem;
 }
 .home_two span {
-  margin-left: 7rem;
+  margin-left: 12rem;
+  margin-top: 1.5rem;
 }
 
 /* Parte 3 do projeto */

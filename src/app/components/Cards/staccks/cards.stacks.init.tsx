@@ -13,6 +13,7 @@ export function CardStackInit () {
                     <Card 
                         name={info.name}
                         image={info.image}
+                        href={info.href}
                     />
                 </div>
             ))}

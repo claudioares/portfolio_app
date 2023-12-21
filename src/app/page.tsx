@@ -76,7 +76,7 @@ export default function Home() {
           <button className="two">Saiba Mais...</button>
         </div>
       </div>
-
+      
       <div className="home_two">
         <span>
           Estou aqui para transformar suas ideias em realidade digital.

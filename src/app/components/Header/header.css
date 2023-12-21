@@ -4,3 +4,7 @@
     opacity: 0;
     translate: -30rem;
 }
+
+#header_logo{
+    transform: rotate3d(0, 1, 0, 10deg); 
+}

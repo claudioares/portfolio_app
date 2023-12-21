@@ -3,19 +3,20 @@ import Image from "next/image"
 
 type Name = {
     name: string 
+    href: string
     image: string | StaticImport
 }
 
 
-export function Card ({name, image}:Name) {
+export function Card ({name, image, href}:Name) {
     return(
-        <div className="container_card_stacks">
+        <a href={href} className="container_card_stacks" target="_blank" rel="noreferrer">
             <div className="card_stack_2">
                 <div className="card_stack_3">
                     <Image src={image} alt="LOgo da stack" />
                     <h1 className="h1_card_stacks">{name}</h1>
                 </div>
             </div>
-        </div>
+        </a>
     )
 }
