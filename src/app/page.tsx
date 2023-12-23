@@ -6,11 +6,11 @@ import icon04 from "../../public/icon04.svg"
 import { CardsPrimery } from "./components/Cards/primery/cards.primery";
 import { CardStackInit } from "./components/Cards/staccks/cards.stacks.init";
 import { LinksWorks } from "./components/LinksWorks/links.works";
-import { Footer } from "./components/footer/footer";
 import Typing from "./components/typing"
 import {useLayoutEffect, useState} from "react"
 import {gsap} from "gsap"
 import {ScrollTrigger} from "gsap/ScrollTrigger"
+import { MyFooter } from "./components/footer/footer";
 
 
 export default function Home() {
@@ -102,9 +102,8 @@ export default function Home() {
       </div>
 
       <div className="home_footer">
-        <Footer />
+        <MyFooter />
       </div>
-
     </div>
   );
 }
