@@ -11,11 +11,10 @@ import {useLayoutEffect, useState} from "react"
 import {gsap} from "gsap"
 import {ScrollTrigger} from "gsap/ScrollTrigger"
 import { MyFooter } from "./components/footer/footer";
+import Link from "next/link";
 
 
 export default function Home() {
-
-  const [typing, setTyping] = useState(false)
 
   useLayoutEffect(()=>{
     gsap.to(".buttons_home", {
@@ -55,17 +54,11 @@ export default function Home() {
     }
   }, [])
 
-  useLayoutEffect(()=>{
-    setTimeout(()=>{
-      setTyping(true);
-    }, 1000)
-  }, [])
-
   return (
     <div className="home_one">
       <div className="primaries_infor_texts">
         <h3 className="h3_text_one">Transforme sua visão em realidade, com um toque de inovação!</h3>
-        {typing && <Typing formationDiscripition = "Desenvolvimento Full Stack"/>}
+        <Typing formationDiscripition = "Desenvolvimento Full Stack"/>
         <p className="p_text_one">
           Desenvolvimento Full Stack envolve habilidades abrangentes 
           tanto no frontend quanto no backend, permitindo a criação 
@@ -74,7 +67,7 @@ export default function Home() {
           garantindo soluções completas e eficientes.
         </p>
         <div className="buttons_home">
-          <button className="one">Fale comigo</button>
+        <Link href="/talkToMe"><button className="one">Fale comigo</button></Link>
           <button className="two">Saiba Mais...</button>
         </div>
       </div>

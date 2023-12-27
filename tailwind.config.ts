@@ -20,6 +20,8 @@ const config: Config = {
       'bermuda': '#78dcca',
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography')
+  ],
 }
 export default config
