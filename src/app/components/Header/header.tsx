@@ -35,7 +35,7 @@ export function MyHeader () {
                 <Image src={logo} alt="logo" className="w-[15rem] opacity-0" id="header_logo"/>
                 <ul className="flex h-[100%] justify-between w-[56.5rem] items-center text-green_clean">
                     <li><Link href="/" className={`hover:text-grey opacity-0`} id="home">Home</Link></li>
-                    <li><Link href="/docs" className={`hover:text-grey opacity-0`} id="docs">Docs</Link></li>
+                    <li><Link href="/templates" className={`hover:text-grey opacity-0`} id="docs">Templates</Link></li>
                     <li><Link href="/blog" className={`hover:text-grey opacity-0`} id="blog" >Blog</Link></li>
                     <li><Link href="/aboutme" className={`hover:text-grey opacity-0`} id="aboutme">Sobre mim</Link></li>
                 </ul>
@@ -45,7 +45,7 @@ export function MyHeader () {
                 <Image src={logo} alt="logo" className="w-[15rem] opacity-0" id="header_logo"/>
                 <ul className="flex h-[100%] justify-between w-[56.5rem] items-center text-green_clean">
                     <li><Link href="/" className={`${pathname === '/' && "text-grey"} hover:text-grey opacity-0`} id="home">Home</Link></li>
-                    <li><Link href="/docs" className={`${pathname === '/docs' && "text-grey"} hover:text-grey opacity-0`} id="docs">Docs</Link></li>
+                    <li><Link href="/templates" className={`${pathname === '/templates' && "text-grey"} hover:text-grey opacity-0`} id="docs">templates</Link></li>
                     <li><Link href="/blog" className={`${pathname === '/blog' && "text-grey"} hover:text-grey opacity-0`} id="blog" >Blog</Link></li>
                     <li><Link href="/aboutme" className={`${pathname === '/aboutme' && "text-grey"} hover:text-grey opacity-0`} id="aboutme">Sobre mim</Link></li>
                 </ul>

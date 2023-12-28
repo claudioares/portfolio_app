@@ -27,8 +27,9 @@ export function LinksWorks () {
                 <h3 className="h3_link_works">Em que posso ajudar você?</h3>
                 {infoWorks.map(info=>(
                     <Links 
-                        work={info}
-                        key={info}
+                        work={info.work}
+                        key={info.id}
+                        link={info.link}
                     />
                 ))
                 }

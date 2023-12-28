@@ -33,7 +33,7 @@ export function MyFooter () {
                     <div className="contacts">
                         <strong>CONTATOS</strong>
                         <ul>
-                            <li><a href="">Fale comigo</a></li>
+                            <li><a href="/talkToMe">Fale comigo</a></li>
                             <li><a href="">Saiba mais</a></li>
                             <li><a href="">claudiojasoares@gmail.com</a></li>
                             <li><a href="">jas.code@yahoo.com</a></li>

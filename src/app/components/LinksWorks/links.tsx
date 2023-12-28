@@ -1,16 +1,19 @@
+import Link from "next/link"
+
 type LinksProps = {
-    work: string
+    work: string,
+    link: string
 }
 
-export function Links ({work}:LinksProps) {
+export function Links ({work, link}:LinksProps) {
 
     return(
         <>
-            <div className="cel_link">
+            <Link className="cel_link" href={link}>
                 <strong>
                     {work}
                 </strong>
-            </div>
+            </Link>
         </>
     )
 }
