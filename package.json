@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint src --ext .tsx --fix"
   },
   "dependencies": {
     "gsap": "^3.12.4",
@@ -17,6 +17,7 @@
     "react-spring": "^9.7.3"
   },
   "devDependencies": {
+    "@rocketseat/eslint-config": "^2.1.0",
     "@tailwindcss/typography": "^0.5.10",
     "@types/gsap": "^3.0.0",
     "@types/node": "^20",
