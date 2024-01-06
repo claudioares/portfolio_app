@@ -9,8 +9,6 @@ import { usePathname } from 'next/navigation'
 export function MyHeader() {
   const pathname = usePathname()
 
-  console.log(pathname)
-
   useLayoutEffect(() => {
     gsap.to('#header_logo, #docs, #blog, #aboutme', {
       opacity: 1,
@@ -47,11 +45,11 @@ export function MyHeader() {
             </li>
             <li>
               <Link
-                href="/templates"
+                href="/portifolio"
                 className={`hover:text-grey opacity-0`}
                 id="docs"
               >
-                Templates
+                Portifólio
               </Link>
             </li>
             <li>
@@ -99,13 +97,13 @@ export function MyHeader() {
             </li>
             <li>
               <Link
-                href="/templates"
+                href="/portifolio"
                 className={`${
-                  pathname === '/templates' && 'text-grey'
+                  pathname === '/portifolio' && 'text-grey'
                 } hover:text-grey opacity-0`}
                 id="docs"
               >
-                templates
+                Portifólio
               </Link>
             </li>
             <li>

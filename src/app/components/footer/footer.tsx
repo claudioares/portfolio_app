@@ -29,7 +29,7 @@ export function MyFooter() {
                 <Link href="/">Home</Link>
               </li>
               <li>
-                <Link href="">Templates</Link>
+                <Link href="/portifolio">Portifólio</Link>
               </li>
               <li>
                 <Link href="">Blog</Link>

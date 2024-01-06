@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { NavLeft } from './nav.left'
 import { NavRight } from './nav.right'
 
-export default function Templates() {
+export default function Portifolio() {
   return (
     <>
       <div className="bg-black flex justify-center items-center h-screen pt-[5.9rem] text-grey">
@@ -20,12 +20,12 @@ export default function Templates() {
                 <Image
                   src={info.imgTemplateUp}
                   alt="mini imagem pagina"
-                  className="absolute z-10 w-[24.6rem] h-[15.1rem] top-7 left-7 rounded-[1.2rem]"
+                  className="absolute z-10 w-auto h-auto top-7 left-7 rounded-[1.2rem]"
                 />
                 <Image
                   src={info.imgTemplateDn}
                   alt="mini imagem pagina"
-                  className="w-[24.6rem] h-[15.1rem] rounded-[1.2rem]"
+                  className="w-auto h-auto rounded-[1.2rem]"
                 />
               </div>
               <div className="mt-9 flex flex-col gap-[2.2rem] items-center justify-center">
@@ -42,7 +42,7 @@ export default function Templates() {
             </div>
           ))}
 
-          <h1 className="text-center">Brevemente Novos templates</h1>
+          <h1 className="text-center pt-8">Brevemente Novos templates</h1>
         </div>
 
         <NavRight />

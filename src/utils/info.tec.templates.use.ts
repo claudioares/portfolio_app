@@ -10,8 +10,8 @@ import template4_1 from '../../public/template4-1.svg'
 export const infoSitesUse = [
   {
     id: '01',
-    site: '',
-    link: '',
+    site: 'Skeleton Screens',
+    link: 'https://www.nngroup.com/articles/skeleton-screens/',
   },
 ]
 export const infoLibUse = [
