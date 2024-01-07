@@ -14,21 +14,27 @@ export async function NavRight() {
             <GithubIcon className="w-6" />
             <strong className="text-sm">Links GitHub</strong>
           </div>
-          <ul>
-            {REPOSITORIE.map(
-              (repo: {
-                id: null | undefined
-                name: string
-                svn_url: string
-              }) => (
-                <li className="cursor-pointer" key={repo.id}>
-                  <Link href={repo.svn_url} target="_blank">
-                    {repo.name}
-                  </Link>
-                </li>
-              ),
-            )}
-          </ul>
+          {REPOSITORIE ? (
+            <ul>
+              {REPOSITORIE.map(
+                (repo: {
+                  id: null | undefined
+                  name: string
+                  svn_url: string
+                }) => (
+                  <li className="cursor-pointer" key={repo.id}>
+                    <Link href={repo.svn_url} target="_blank">
+                      {repo.name}
+                    </Link>
+                  </li>
+                ),
+              )}
+            </ul>
+          ) : (
+            <ul>
+              <span>Server not found!</span>
+            </ul>
+          )}
         </nav>
       </div>
     </>
